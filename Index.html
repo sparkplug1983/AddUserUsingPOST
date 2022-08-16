@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheets' href="./css/styles.css">
+
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-black {
+        background-color: #363636;
+    }
+
+    .card-container {
+        min-height: 95vh;
+        min-width: 100%;
+        display: flex;
+        place-items: center;
+        place-content: center;
+      
+    }
+    .card {
+        position:absolute;
+        width: 300px;
+        height: 150px;
+        padding: 14px;
+        border-radius: 5px;
+        background-color: #b58c90;
+    }
+.center-text {
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 12px;
+}
+</style>
+<body>
+    <div class="background-black">
+        <div class="card-container center">
+            <div class="card">
+    <input type="text" placeholder="First Name" id="firstName">
+    <input type="text" placeholder="Last Name" id="lastName">
+    <input type="email" placeholder="Email" id="email">
+    <input type="password" placeholder="Password" id="password">
+    <br><br>
+    <button onclick="peticion()">Add data</button>
+    
+</div>
+</div>
+</div>
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/peticion.js"></script>
+
+</html>
